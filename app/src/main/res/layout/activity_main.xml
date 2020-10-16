@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#1b2138"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="410dp"
+        android:layout_height="735dp"
+        android:background="#1b2138"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="30dp"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            android:backgroundTint="#A8ADBA" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="209dp"
+            android:layout_marginBottom="628dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/payment"
+            android:textColor="#fff"
+            android:textSize="31sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/noti"
+            android:layout_width="30dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="-55dp"
+            android:layout_toEndOf="@+id/text"
+            android:background="@drawable/ic_baseline_notifications_24"
+            android:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/text"
+            app:layout_constraintEnd_toEndOf="@id/text"
+            app:layout_constraintTop_toTopOf="@id/text" />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="650dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/update_style"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:padding="8dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/upadate_profile"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_alignTop="@id/text"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/card_shape"
+            app:layout_constraintBottom_toBottomOf="@+id/text"
+            app:layout_constraintTop_toTopOf="@id/update">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="56dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="11dp"
+                android:src="@drawable/mastercard" />
+
+            <TextView
+                android:id="@+id/code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:letterSpacing="0.15"
+                android:layout_marginTop="35dp"
+                android:hint="@string/code"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cardholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/code"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="monospace"
+                android:text="@string/card_holder"
+                android:textColor="#959AFE"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/cardholdername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/code"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="monospace"
+                android:text="Anne Doe"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/expdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/code"
+                android:layout_marginStart="215dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="monospace"
+                android:text="EXP DATE"
+                android:textColor="#959AFE"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/expdate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/code"
+                android:layout_marginStart="216dp"
+                android:layout_marginTop="48dp"
+                android:fontFamily="monospace"
+                android:text="MM/YY"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_alignTop="@id/text"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="294dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/card_shape2"
+            app:layout_constraintBottom_toBottomOf="@+id/text"
+            app:layout_constraintTop_toTopOf="@id/update">
+
+            <EditText
+                android:id="@+id/edit1"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/enter_the_card_number"
+                android:inputType="number"
+                android:maxLength="19"
+                android:textColor="#A8ADBA"
+                android:textColorHint="#A8ADBA"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="24dp"
+                android:layout_alignEnd="@id/edit1"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="25dp"
+                android:src="@drawable/mastercard" />
+
+            <Button
+                android:id="@+id/clearTextBtn"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignEnd="@id/edit1"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="1dp"
+                android:background="@drawable/close_button"
+                android:backgroundTint="#fff" />
+
+            <EditText
+                android:id="@+id/edit2"
+                android:layout_width="265dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit1"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:hint="@string/enter_your_name"
+                android:textColor="#A8ADBA"
+                android:textColorHint="#A8ADBA" />
+
+            <EditText
+                android:id="@+id/edit3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit2"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:hint="Exp MM/YY"
+                android:importantForAutofill="no"
+                android:inputType="date"
+                android:maxLength="5"
+                android:textColor="#A8ADBA"
+                android:textColorHint="#A8ADBA"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edit4"
+                android:layout_width="97dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/edit2"
+                android:layout_marginStart="189dp"
+                android:layout_marginTop="15dp"
+                android:hint="CVV"
+                android:importantForAutofill="no"
+                android:inputType="number|numberPassword"
+                android:maxLength="3"
+                android:textColor="#A8ADBA"
+                android:textColorHint="#A8ADBA"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="95dp"
+            android:layout_marginTop="561dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/shape"
+            android:gravity="center"
+            android:includeFontPadding="true"
+            android:padding="8dp"
+            android:paddingHorizontal="8dp"
+            android:paddingVertical="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="8dp"
+            android:paddingBottom="8dp"
+            android:text="@string/add_new_card"
+            android:textAllCaps="false"
+            android:textColor="#535BFE"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

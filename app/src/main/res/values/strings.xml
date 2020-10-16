@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CardKotlin</string>
+    <string name="payment">Payment</string>
+    <string name="add_new_card">+"\t""\t"Add new card</string>
+    <string name="upadate_profile">Update Profile</string>
+    <string name="code">XXXX "\t"XXXX "\t"XXXX"\t" XXXX</string>
+    <string name="card_holder">CARD HOLDER</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_the_card_number">Enter the card number</string>
+</resources>
