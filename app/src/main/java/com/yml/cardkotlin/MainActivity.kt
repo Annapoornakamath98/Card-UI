@@ -80,12 +80,6 @@ class MainActivity : AppCompatActivity() {
                     e1.setText(e1.getText().toString() + " ")
                     val pos = e1.getText().length
                     e1.setSelection(pos)
-                } else if (count >= inputlength && (inputlength == 4 || inputlength == 9 || inputlength == 16)) {
-                    e1.setText(e1.getText().toString()
-                        .substring(0, e1.getText()
-                            .toString().length - 1))
-                    val pos = e1.getText().length
-                    e1.setSelection(pos)
                 }
                 count = e1.getText().toString().length
             }
@@ -104,12 +98,6 @@ class MainActivity : AppCompatActivity() {
                 val inputlength = e3.getText().toString().length
                 if (count <= inputlength && inputlength == 2) {
                     e3.setText(e3.getText().toString() + "/")
-                    val pos = e3.getText().length
-                    e3.setSelection(pos)
-                } else if (count >= inputlength && inputlength == 2) {
-                    e3.setText(e3.getText().toString()
-                        .substring(0, e3.getText()
-                            .toString().length - 1))
                     val pos = e3.getText().length
                     e3.setSelection(pos)
                 }
