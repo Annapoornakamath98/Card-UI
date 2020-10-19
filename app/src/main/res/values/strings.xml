@@ -7,4 +7,6 @@
     <string name="card_holder">CARD HOLDER</string>
     <string name="enter_your_name">Enter your name</string>
     <string name="enter_the_card_number">Enter the card number</string>
+    <string name="cvv">CVV</string>
+    <string name="exp_mm_yy">Exp MM/YY</string>
 </resources>
